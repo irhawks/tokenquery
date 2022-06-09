@@ -27,10 +27,10 @@ class Tokenizer:
         else:
             print ("Unrecognized tokenizer type : setting back to default (PTBTokenizer)")
             self.tokenizer_type = "PTBTokenizer"
-        try:
-            nltk.data.find('punkt.zip')
-        except LookupError:
-            nltk.download('punkt')
+        # try:
+        #     nltk.data.find('punkt.zip')
+        # except LookupError:
+        #     nltk.download('punkt')
 
     def tokenize(self, text):
         """

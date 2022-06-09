@@ -35,9 +35,9 @@ class State:
             opr_input = acceptor.get('opr_input', None)
 
             if acceptor['label'] == 'text':
-                token_input = token.get_text()
+                token_input = token['text']
             else:
-                token_input = token.get_a_label(acceptor['label'])
+                token_input = token[acceptor['label']]
 
             # if not token_input:
             #     print ("something went wrong, token input is empty")

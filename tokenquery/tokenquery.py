@@ -38,7 +38,7 @@ class TokenQuery:
                         for group_key in result_item:
                             group = result_item[group_key]
                             if len(group) > 0:
-                                last_matched_token = group[-1].get_token_id()
+                                last_matched_token = group[-1]['id']
                                 if last_matched_token > last_matched:
                                     last_matched = last_matched_token
 
